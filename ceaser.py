@@ -6,12 +6,11 @@ def password_encoder(password: str) -> str:
     return encoded_password
 
 
-def password_decoder(encoded_password: str) -> str:
-    password = ''
-    for digit in encoded_password:
-        decoded_digit = str((int(digit) - 3) % 10)
-        password += decoded_digit
-    return password
+def password_decoder(encoded_password):
+    decoded_password = ""
+    for digit in decoded_password:
+        decoded_password += str((int(digit) - 3) % 10)
+    return decoded_password
 
 
 while True:
